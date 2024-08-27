@@ -7,9 +7,12 @@ public class MagicSquareDriver {
             return;
         }
 
-        String option = args[0];
+        String arg = args[0];
+        String file = args[1];
+        int length = args.length;
         
-        if (!option.equals("-check") && !option.equals("-create")) {
+        
+        if (!arg.equals("-check") && !arg.equals("-create")) {
             System.out.println(usageMessage);
             return;            
         }
